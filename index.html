@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gà</title>
+    <link rel="stylesheet" href="./ca.css">
+    <link rel="stylesheet" href="./cb.css">
+    <script src="https://kit.fontawesome.com/d383754104.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--  <div id="displayy">
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+        <div class="displayyy_ss"></div>
+       
+    </div> -->
+    <div id="timkiem_input">
+        <h1>nhập thông tin tìm kiếm</h1>
+        <input id="timkiem_input-input" type="text">
+        <i class="fa-solid fa-xmark fa-2xl" id="timkiem_input-close"></i>
+    </div>
+    <div id="Dang_nhap">
+
+        <form action="">
+            <i class="fa-solid fa-xmark fa-2xl" id="Dangnhap_input-close"></i>
+            <h1>Đăng Nhập</h1>
+            <div class="fDang_nhap-dangnhap">
+                <label for="tk_dang_nhap">Tài Khoản Đăng Nhập</label>
+                <input class="dang_nhap-input" type="text" id="tk_dang_nhap" name="tk_dang_nhap" value="">
+            </div>
+            <div class="fDang_nhap-dangnhap">
+                <label for="mk_dang_nhap">Mật Khẩu</label>
+                <input class="dang_nhap-input" type="password" id="mk_dang_nhap" name="mk_dang_nhap" value="">
+            </div>
+            <div id="dang_nhap-dangky">
+                <button class="dang_nhap-dangky-butt" id="dang_nhap-butt">Đăng Nhập</button>
+                <button class="dang_nhap-dangky-butt" id="dang_ky-butt">Đăng Ký</button>
+            </div>
+        </form>
+    </div>
+    <div id="header">
+        <div id="header_nav">
+            <div id="header_nav-logo" class="header_nav-margin_all">
+
+            </div>
+            <div id="header_nav-city" class="header_nav-margin_all">
+                <p id="header_nav-city-text">s</p>
+                <i id="active_down" class="fa-solid fa-angle-down fa-sm"></i>
+                <div id="header_nav-city_datasheet">
+
+                </div>
+            </div>
+            <div id="header_nav-button" class="header_nav-margin_all">
+                <div class="header_nav-button-button_select"><i class="fa-solid fa-bowl-food"></i><p>Đồ Ăn</p></div>
+                <div class="header_nav-button-button_select"><i class="fa-solid fa-carrot"></i><p>Thực Phẩm</p></div>
+                <div class="header_nav-button-button_select"><i class="fa-solid fa-glass-water"></i><p>Nước Uống</p></div>
+                <div class="header_nav-button-button_select"><i class="fa-solid fa-capsules"></i><p>Thuốc</p></div>
+                <div class="header_nav-button-button_select"><i class="fa-solid fa-bone"></i><p>Thú Cưng</p></div>
+
+            </div>
+            <div id="timkiem_dangnhap" class="header_nav-margin_all">
+                <div id="timkiem_dangnhap-timkiem">
+                    <i id="timkiem_dangnhap-timkiem-icon" class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+                <div id="timkiem_dangnhap-dangnhap">
+                    Đăng Nhập
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="main_body">
+        <div id="main_body-left">
+            <h2 id="main_body-left-o_margin">Đặt đồ ăn giao hàng từ 20'.....</h2>
+            <h3 id="main_body-left-diadiem_vitri">1</h3>
+            <div id="main_body-left-search-icon">
+                <input id="main_body-left-main_body-left-search_icon-search" type="text"
+                    placeholder="Tìm địa điểm - món ăn - địa chỉ.......">
+                <div id="main_body-left-main_body-left-search_icon-icon">
+                    <i id="icon" class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+            </div>
+            <div id="main_body-left-option_menu_button">
+                <div class="main_body-left-option_menu_button-array">
+                    <div class="main_body-left-option_menu_button-button">All</div>
+                    <div class="main_body-left-option_menu_button-button">Đồ Ăn</div>
+                    <div class="main_body-left-option_menu_button-button">Đồ Uống</div>
+                    <div class="main_body-left-option_menu_button-button">Đồ Chay</div>
+                    <div class="main_body-left-option_menu_button-button">Bánh Kem</div>
+                </div>
+                <div class="main_body-left-option_menu_button-array">
+                    <div class="main_body-left-option_menu_button-button">Tráng Miệng</div>
+                    <div class="main_body-left-option_menu_button-button">Homemade</div>
+                    <div class="main_body-left-option_menu_button-button">Vỉa Hè</div>
+                </div>
+                <div class="main_body-left-option_menu_button-array">
+                    <div class="main_body-left-option_menu_button-button">Pizza/Burger</div>
+                    <div class="main_body-left-option_menu_button-button">Món gà</div>
+                    <div class="main_body-left-option_menu_button-button">Món Lẩu</div>
+                    <div class="main_body-left-option_menu_button-button">Sushi</div>
+                </div>
+
+                <div class="main_body-left-option_menu_button-array">
+                    <div class="main_body-left-option_menu_button-button">Mì Phở</div>
+                    <div class="main_body-left-option_menu_button-button">Cơm Hộp</div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="main_body-right">
+            <div class="main_body-right-menu" id="main_body-right-menu1">
+                <span id="main_body-right-menu1-span"> </span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span>Chọn địa điểm giao hàng</span>
+                <i id="main_body-right-menu1-icon" class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="main_body-right-menu" id="main_body-right-menu2">
+                <h2>Ưu đãi</h2>
+                <div id="main_body-right-menu2-menu_option">
+                    <div class="main_body-right-menu2-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu2-menu_option-option-call">Đặt</div>
+                    </div>
+                    <div class="main_body-right-menu2-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu2-menu_option-option-call">Đặt</div>
+                    </div>
+                    <div class="main_body-right-menu2-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu2-menu_option-option-call">Đặt</div>
+                    </div>
+                    <div class="main_body-right-menu2-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu2-menu_option-option-call">Đặt</div>
+                    </div>
+                    <div class="main_body-right-menu2-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu2-menu_option-option-call">Đặt</div>
+                    </div>
+                    <div class="main_body-right-menu2-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu2-menu_option-option-call">Đặt</div>
+                    </div>
+                </div>
+                <div id="main_body-right-menu2-refesh">
+                    <i id="main_body-right-menu2-refesh-icon" class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+            </div>
+            <div class="main_body-right-menu" id="main_body-right-menu3">
+                <h2>Bộ sưu tập</h2>
+                <div id="main_body-right-menu3-menu_option">
+                    <div class="main_body-right-menu3-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu3-menu_option-option-call">Xem</div>
+                    </div>
+                    <div class="main_body-right-menu3-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu3-menu_option-option-call">Xem</div>
+                    </div>
+                    <div class="main_body-right-menu3-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu3-menu_option-option-call">Xem</div>
+                    </div>
+                    <div class="main_body-right-menu3-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu3-menu_option-option-call">Xem</div>
+                    </div>
+                    <div class="main_body-right-menu3-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu3-menu_option-option-call">Xem</div>
+                    </div>
+                    <div class="main_body-right-menu3-menu_option-option">
+                        <img src="./img/buildings-gf39f60099_1920.jpg">
+                        <div class="main_body-right-menu3-menu_option-option-call">Xem</div>
+                    </div>
+                </div>
+                <div id="main_body-right-menu3-refesh">
+                    <i id="main_body-right-menu3-refesh-icon" class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+            </div>
+            <div class="main_body-right-menu" id="main_body-right-menu4">
+                <div id="main_body-right-menu4-nav">
+                    <div id="main_body-right-menu4-nav-1">
+                        <p class="active">Gần Tôi</p>
+                        <p>Bán chạy</p>
+                        <p>Đánh Giá</p>
+                        <p>Giao Nhanh</p>
+                    </div>
+                    <select name="cars" id="main_body-right-menu4-vitri_q_h">
+                        <option value="">chon quan/huyen</option>
+                    </select>
+                </div>
+                <div id="main_body-right-menu4-menu_food">
+                    <div class="main_body-right-menu4-menu_food-food">
+                        <div id="main_body-right-menu4-menu_food-food-img">
+                            <img src="./img/buildings-gf39f60099_1920.jpg" alt="">
+                        </div>
+
+                        <div id="main_body-right-menu4-menu_food-food-result">
+                            <div class="mbr-menu4-mff-result-set" id="mbr-menu4-mff-result-name">
+                                <i class="fa-solid fa-shield"></i>
+                                <p>pho bo</p>
+                            </div>
+                            <div class="mbr-menu4-mff-result-set" id="mbr-menu4-mff-result-vi_tri">
+                                <p>x</p>
+                            </div>
+                            <div class="mbr-menu4-mff-result-set" id="mbr-menu4-mff-result-tag_price">
+                                <i id="rotate" class="fa-solid fa-tag fa-lg"></i>
+                                <p>x</p>
+                                <i id="money" class="fa-solid fa-dollar-sign"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="mbr-menu4-mff-result-set" id="mbr-menu4-mff-result-sale">
+                                <i id="gift" class="fa-solid fa-tag"></i>
+                                <p>x</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./jsxx.js"></script>
+
+</body>
+
+</html>
