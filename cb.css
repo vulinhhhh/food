@@ -153,23 +153,25 @@
     position: absolute;
 }
 
-#main_body-right #main_body-right-menu2,
-#main_body-right #main_body-right-menu3 {
+#main_body-right #main_body-right-menu2{
     height: 520px;
     background-color: #fff;
     display: block;
-
     border: 1px solid transparent;
 }
-
+#main_body-right #main_body-right-menu3 {
+    height: 447px;
+    background-color: #fff;
+    display: block;
+    border: 1px solid transparent;
+}
 #main_body-right #main_body-right-menu2 h2,
 #main_body-right #main_body-right-menu3 h2 {
     margin-top: 15px;
     margin-left: 20px;
 }
 
-#main_body-right #main_body-right-menu2 #main_body-right-menu2-menu_option,
-#main_body-right #main_body-right-menu3 #main_body-right-menu3-menu_option {
+#main_body-right #main_body-right-menu2 #main_body-right-menu2-menu_option{
     height: 440px;
     width: calc(100% - (20px * 2));
     margin: 10px 0px 0px 20px;
@@ -180,9 +182,21 @@
     padding: 15px 5px 0px 5px;
     transition: box-shadow 5s;
     border: 1px solid transparent;
-    gap: 0px 5px;
+    gap: 15px 5px;
 }
-
+#main_body-right #main_body-right-menu3 #main_body-right-menu3-menu_option {
+    height: 367px;
+    width: calc(100% - (20px * 2));
+    margin: 10px 0px 0px 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 5px 0px 5px;
+    transition: box-shadow 5s;
+    border: 1px solid transparent;
+    gap: 15px 5px;
+}
 #main_body-right #main_body-right-menu2 #main_body-right-menu2-menu_option::-webkit-scrollbar,
 #main_body-right #main_body-right-menu3 #main_body-right-menu3-menu_option::-webkit-scrollbar {
     width: 0px;
@@ -252,14 +266,28 @@
     left: -4px;
 }
 
-#main_body-right #main_body-right-menu2 .main_body-right-menu2-menu_option-option img,
-#main_body-right #main_body-right-menu3 .main_body-right-menu3-menu_option-option img {
+#main_body-right #main_body-right-menu2 .main_body-right-menu2-menu_option-option img{
     width: 100%;
     height: calc(100% - 96px);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-
+#main_body-right #main_body-right-menu3 .main_body-right-menu3-menu_option-option img {
+    width: 100%;
+    height: calc(100% - 47px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#main_body-right #main_body-right-menu3 .main_body-right-menu3-menu_option-option #mbr-menu3-moo-diadiem_deal{
+    height: 37px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 15px;
+}
+#main_body-right #main_body-right-menu3 .main_body-right-menu3-menu_option-option #mbr-menu3-moo-diadiem_deal #mbr-menu3-moo-d_d-deal{
+   color: rgb(12, 173, 173);
+}
 #main_body-right #main_body-right-menu2 #main_body-right-menu2-refesh,
 #main_body-right #main_body-right-menu3 #main_body-right-menu3-refesh {
     height: 27px;
