@@ -354,13 +354,14 @@
 }
 
 #main_body #main_body-right #main_body-right-menu4 #main_body-right-menu4-nav #main_body-right-menu4-nav-1 p:hover {
-    color: rgb(34, 173, 173);
-    
+    color: rgb(64, 133, 133); 
 }
-
+#main_body #main_body-right #main_body-right-menu4 #main_body-right-menu4-nav #main_body-right-menu4-nav-1 .active:hover {
+    color: rgb(34, 173, 173);
+}
 #main_body #main_body-right #main_body-right-menu4 #main_body-right-menu4-nav #main_body-right-menu4-vitri_q_h {
     height: 100%;
-    width: 27%;
+    width: 28%;
     padding: 0px 10px;
     border-radius: 5px;
     border: 1px solid rgb(187 170 170);

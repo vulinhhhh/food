@@ -29,9 +29,9 @@ function right_menu3() {
 function demx() {
     let dem = 0;
     return function (x) {
-        if(x!==undefined){
-            dem=x;
-        }else{
+        if (x !== undefined) {
+            dem = x;
+        } else {
             return dem;
         }
     }
@@ -63,41 +63,41 @@ function set_active() {
     active1();
     change_active_class();
 }
-function access_form(){
-    const dang_nhap=document.getElementById("timkiem_dangnhap-dangnhap");
-    const dang_nhap_f=document.getElementById("Dang_nhap");
-    const dang_nhap_f_c=document.getElementById("Dangnhap_input-close");
-    dang_nhap.addEventListener("click",function(e){
+function access_form() {
+    const dang_nhap = document.getElementById("timkiem_dangnhap-dangnhap");
+    const dang_nhap_f = document.getElementById("Dang_nhap");
+    const dang_nhap_f_c = document.getElementById("Dangnhap_input-close");
+    dang_nhap.addEventListener("click", function (e) {
         dang_nhap_f.classList.add("active")
     })
-    dang_nhap_f_c.addEventListener("click",function(e){
+    dang_nhap_f_c.addEventListener("click", function (e) {
         dang_nhap_f.classList.remove("active")
     })
 }
 
-function xxxxx(){
-    const timkiem_input=document.getElementById("timkiem_input");
-    const timkiem_dangnhap_timkiem=document.getElementById("timkiem_dangnhap-timkiem");
-    const timkiem_input_i=document.getElementById("timkiem_input-input");
-    
-    timkiem_dangnhap_timkiem.addEventListener("click",function(e){
+function xxxxx() {
+    const timkiem_input = document.getElementById("timkiem_input");
+    const timkiem_dangnhap_timkiem = document.getElementById("timkiem_dangnhap-timkiem");
+    const timkiem_input_i = document.getElementById("timkiem_input-input");
+
+    timkiem_dangnhap_timkiem.addEventListener("click", function (e) {
         console.log(e.target);
         timkiem_input.classList.add("active");
     }
     )
-    
-    timkiem_input.childNodes[5].addEventListener("click",function(){
+
+    timkiem_input.childNodes[5].addEventListener("click", function () {
         timkiem_input.classList.remove("active");
-        timkiem_input_i.value="";
+        timkiem_input_i.value = "";
     }
     )
 }
-function datashett(){
+function datashett() {
     const x = document.getElementById("header_nav-city");
     const x2 = document.querySelectorAll("*");
-    const x_check=document.querySelector("div#header_nav-city.header_nav-margin_all");
-    const x_check1=document.querySelector("p#header_nav-city-text");
-    const x_Check2=document.querySelector("i#active_down.fa-solid.fa-angle-down.fa-sm");
+    const x_check = document.querySelector("div#header_nav-city.header_nav-margin_all");
+    const x_check1 = document.querySelector("p#header_nav-city-text");
+    const x_Check2 = document.querySelector("i#active_down.fa-solid.fa-angle-down.fa-sm");
     for (let i = 0; i < x2.length; i++) {
         if (x2[i] !== x_check && x2[i] !== x_check1 && x2[i] !== x_Check2) {
             x2[i].addEventListener("click", function (e) {
@@ -105,86 +105,36 @@ function datashett(){
                     x.classList.remove("active")
                     e.stopPropagation();
                 }
-                
+
             })
         } else {
             x2[i].addEventListener("click", function (e) {
                 x.classList.toggle('active');
                 e.stopPropagation();
-    
+
             })
         }
-    
+
     }
 }
-
 function array_city_text() {
     const array_text = [
-        "An Giang",
-        "BRịa-VTàu",
-        "Bạc Liêu",
-        "Bắc Kạn",
-        "Bắc Giang",
-        "Bắc Ninh",
-        "Bến Tre",
-        "Bình Dương",
-        "Bình Định",
-        "Bình Phước",
-        "Bình Thuận",
-        "Cà Mau",
-        "Cao Bằng",
-        "Cần Thơ ",
-        "Đà Nẵng ",
-        "Đắk Lắk",
-        "Đắk Nông",
-        "Điện Biên",
+        "TP HCM",
+        "Hà Nội",
         "Đồng Nai",
-        "Đồng Tháp",
-        "Gia Lai",
-        "Hà Giang",
-        "Hà Nam",
-        "Hà Nội ",
-        "Hà Tây",
-        "Hà Tĩnh",
-        "Hải Dương",
-        "Hải Phòng ",
-        "Hòa Bình",
-        "TP.HCM ",
-        "Hậu Giang",
-        "Hưng Yên",
-        "Khánh Hòa",
-        "Kiên Giang",
-        "Kon Tum",
-        "Lai Châu",
-        "Lào Cai",
-        "Lạng Sơn",
-        "Lâm Đồng",
-        "Long An",
-        "Nam Định",
-        "Nghệ An",
-        "Ninh Bình",
-        "Ninh Thuận",
-        "Phú Thọ",
-        "Phú Yên",
-        "Quảng Bình",
-        "Quảng Nam",
-        "Quảng Ngãi",
-        "Quảng Ninh",
-        "Quảng Trị",
-        "Sóc Trăng",
-        "Sơn La",
-        "Tây Ninh",
-        "Thái Bình",
-        "Thái Nguyên",
+        "Bình Dương",
+        "Hải.Phòng",
+        "Bắc Ninh",
+        "BR VTàu",
         "Thanh Hóa",
-        "Thừa Thiên - Huế",
-        "Tiền Giang",
-        "Trà Vinh",
-        "Tuyên Quang",
-        "Vĩnh Long",
+        "Quảng Ninh",
+        "Nghệ An",
+        "Hải.Dương",
+        "Cần Thơ",
+        "Long An",
+        "Thái.Nguyên",
         "Vĩnh Phúc",
-        "Yên Bái",
-
+        "Quảng Nam"
     ]
     let htmlvalue = "";
     array_text.map(function (value, index) {
@@ -205,6 +155,17 @@ function array_city_text() {
         })
     }
 }
+function set_access_menu4() {
+    const mbr_mn1_p = document.querySelectorAll("#main_body-right-menu4-nav-1>p");
+    let check = 0;
+    for (let i = 0; i < mbr_mn1_p.length; i++) {
+        mbr_mn1_p[i].addEventListener("click", function () {
+            mbr_mn1_p[check].classList.toggle("active");
+            this.classList.toggle("active");
+            check = i;
+        })
+    }
+}
 access_form();
 xxxxx();
 datashett()
@@ -212,6 +173,7 @@ set_active();
 array_city_text();
 right_menu2();
 right_menu3();
+set_access_menu4();
 
 
 
