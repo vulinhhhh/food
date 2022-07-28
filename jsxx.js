@@ -121,26 +121,77 @@ function array_city_text() {
     const array_text = [
         "TP HCM",
         "Hà Nội",
-        "Đồng Nai",
-        "Bình Dương",
-        "Hải.Phòng",
         "Bắc Ninh",
-        "BR VTàu",
         "Thanh Hóa",
-        "Quảng Ninh",
         "Nghệ An",
-        "Hải.Dương",
-        "Cần Thơ",
-        "Long An",
-        "Thái.Nguyên",
-        "Vĩnh Phúc",
-        "Quảng Nam"
     ]
+    let avc = [];
+    let c = 0;
+
+   
+    function set_vt_q_h(value){
+        let c_html=[];
+        const array_text_city_c = [
+            {
+                id: "TP HCM",
+                q_h: ['Quận 1', 'Quận 3', 'Quận 4', 'Quận 5', 'Quận 6',
+                    'Quận 7', 'Quận 8', 'Quận 10', 'Quận 11', 'Quận 12',
+                    'Bình Tân', 'Bình Thạnh', 'Gò Vấp', 'Phú Nhuận', 'Tân Bình',
+                    'Tân Phú', 'Thủ Đức', 'Bình Chánh', 'Cần Giờ', 'Củ Chi',
+                    'Hóc Môn', 'Nhà Bè']
+            },
+            {
+                id: "Hà Nội",
+                q_h: ['Ba Đình', 'Bắc Từ Liêm', 'Cầu Giấy', 'Đống Đa',
+                    'Hà Đông', 'Hai Bà Trưng', 'Hoàn Kiếm', 'Hoàng Mai',
+                    'Long Biên', 'Nam Từ Liêm', 'Tây Hồ', 'Thanh Xuân',
+                    'Sơn Tây', 'Ba Vì', 'Chương Mỹ', 'Đan Phượng',
+                    'Đông Anh', 'Gia Lâm', 'Hoài Đức', 'Mê Linh',
+                    'Mỹ Đức', 'Phú Xuyên', 'Phúc Thọ', 'Quốc Oai',
+                    'Sóc Sơn', 'Thạch Thất', 'Thanh Oai',
+                    'Thanh Trì', 'Thường Tín']
+            },
+            {
+                id: "Bắc Ninh",
+                q_h: ['Bắc Ninh', 'Từ Sơn', 'Gia Bình', 'Lương Tài', 'Quế Võ',
+                    'Thuận Thành', 'Tiên Du', 'Yên Phong']
+            }
+            ,
+            {
+                id: "Thanh Hóa",
+                q_h: ['Thanh Hóa', 'Sầm Sơn', 'Bỉm Sơn', 'Nghi Sơn', 'Bá Thước',
+                    'Cẩm Thủy', 'Đông Sơn', 'Hà Trung', 'Hậu Lộc', 'Hoằng Hóa',
+                    'Lang Chánh', 'Mường Lát', 'Nga Sơn', 'Ngọc Lặc', 'Như Thanh',
+                    'Như Xuân', 'Nông Cống', 'Quan Hóa', 'Quan Sơn', 'Quảng Xương',
+                    'Thạch Thành', 'Thiệu Hóa', 'Thọ Xuân', 'Thường Xuân', 'Triệu Sơn',
+                    'Vĩnh Lộc', 'Yên Định']
+            }
+            ,
+            {
+                id: "Nghệ An",
+                q_h:['Vinh', 'Cửa Lò', 'Hoàng Mai', 'Thái Hòa', 'Anh Sơn', 'Con Cuông',
+                 'Diễn Châu', 'Đô Lương', 'Hưng Nguyên']
+            }
+    
+        ]
+        for(let i=0;i<array_text_city_c.length;i++){
+            if(value===array_text_city_c[i].id){
+                c_html=array_text_city_c[i].q_h;
+            }
+        }
+        let htmlvalue_vtq_h1=`<option value="">Chọn Quận/Huyện</option>`;
+        for(let i=0;i<c_html.length;i++){
+            htmlvalue_vtq_h1=htmlvalue_vtq_h1+`<option value=${c_html[i]}>${c_html[i]}</option>`;
+        }
+        return htmlvalue_vtq_h1;
+    }
+    const mbr_m4vt_qh=document.getElementById("main_body-right-menu4-vitri_q_h");
     let htmlvalue = "";
     array_text.map(function (value, index) {
         if (index == 0) {
             document.querySelector('#header_nav-city-text').innerText = value;
             document.querySelector('#main_body-left-diadiem_vitri').innerText = `Có x địa điểm tại ${value} từ 0:0' đến 23:59'`;
+            mbr_m4vt_qh.innerHTML=set_vt_q_h(value);
         }
         htmlvalue = htmlvalue + `<div class="header_nav-city_datasheet-city"><p style="line-height:36px; position: absolute;left:10px">${value}</p></div>`;
     })
@@ -152,6 +203,7 @@ function array_city_text() {
         header_nav_city_datasheet_city[i].addEventListener("click", function (e) {
             document.querySelector('#header_nav-city-text').innerText = header_nav_city_datasheet_city[i].textContent;
             document.querySelector('#main_body-left-diadiem_vitri').innerText = `Có x địa điểm tại ${header_nav_city_datasheet_city[i].textContent} từ 0:0' đến 23:59'`;
+            mbr_m4vt_qh.innerHTML=set_vt_q_h(header_nav_city_datasheet_city[i].textContent);
         })
     }
 }
